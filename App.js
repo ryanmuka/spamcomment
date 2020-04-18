@@ -8,7 +8,7 @@ const comment2 = process.env.comment2;
 const comment3 = process.env.comment3;
 
 function getRandomPeriod() {
-    return Math.random().toFixed(2) * (900000 - 600000) + 600000;
+    return Math.random().toFixed(2) * (600000 - 300000) + 300000;
 }
 
 function getRandomComment() {
@@ -33,5 +33,5 @@ for (let index = 0; index < 1000; index++) {
                     console.log('Failed @ ' + ts.toLocaleString());
                 }
             )
-    }, getRandomPeriod() * index); //comment every 10-15 minutes
+    }, getRandomPeriod() * index); //comment every 6-9 minutes
 }
