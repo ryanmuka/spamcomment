@@ -8,7 +8,7 @@ const comment2 = process.env.comment2;
 const comment3 = process.env.comment3;
 
 function getRandomPeriod() {
-    return Math.random().toFixed(2) * (700000 - 400000) + 400000;
+    return Math.random().toFixed(2) * (800000 - 500000) + 500000;
 }
 
 function getRandomComment() {
